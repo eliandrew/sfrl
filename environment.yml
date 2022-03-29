@@ -4,6 +4,7 @@ channels:
 dependencies:
     - python=3.6.5
     - numpy
+    - ipython
     - pip
     - pip:
         - gym==0.20.0
