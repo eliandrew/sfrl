@@ -3,7 +3,7 @@ import time
 from value_iteration import *
 from envs import *
 
-def run(
+def solve(
 	env_info, 
 	gamma=0.9, 
 	delta=0.001, 
