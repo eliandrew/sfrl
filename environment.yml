@@ -1,0 +1,9 @@
+name: salesforce-rl 
+channels:
+    - conda-forge
+dependencies:
+    - python=3.6.5
+    - numpy
+    - pip
+    - pip:
+        - gym==0.20.0
