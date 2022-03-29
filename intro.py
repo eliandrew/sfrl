@@ -1,11 +1,22 @@
 import gym
 import time
-from lake_envs import *
+from envs import *
 
-env = det_small 
-stochastic_env = stochastic_small 
+def print_mdp(P):
+	action_map = {
+		0: "left",
+		1: "down",
+		2: "right",
+		3: "up"
+	}
+	for s in P:
+		for a in P[s]:
+			for (p, s_prime, r, d) in P[s][a]:
+				print("s: {}, a: {} s': {}, p: {}, r: {}, d: {}".format(s, action_map[a], s_prime, p, r, d))
 
-def run(env, max_episodes=1, should_render=True):
+def run(env_info, max_episodes=1, should_render=True):
+	env, _, _ = env_info
+	print_mdp(env.P))
 	# Every time step t the agent:
 	for e in range(max_episodes):
 		episode_reward = 0
