@@ -7,6 +7,7 @@ in
     buildInputs = with pkgs; [
     # basic python dependencies
       python38Packages.numpy
+      python38Packages.scipy
       python38Packages.gym
       python38Packages.ipython
     ];
