@@ -16,7 +16,7 @@ def print_mdp(P):
 
 def run(env_info, max_episodes=1, should_render=True):
 	env, _, _ = env_info
-	print_mdp(env.P))
+	print_mdp(env.P)
 	# Every time step t the agent:
 	for e in range(max_episodes):
 		episode_reward = 0
